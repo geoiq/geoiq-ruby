@@ -20,8 +20,13 @@ module Geoiq
     def upload_data(data, type = "text/csv")
       path = self.geoiq_id.nil? ? "" : "/#{self.geoiq_id}"
       request = send_post("#{self.object_path}#{path}.json", 
-        { :header => {"Content-Type" => "#{type}"},
+        { :headers => {"Content-Type" => "#{type}"},
           :body => data, :options_as_array => true})
+          
+      if request["status"].to_i == 201 && self.geoiq_id.nil?
+        self.geoiq_id = request["location"].match(/(\d+)\.json/)[1]
+      end
+      request
     end
   end
 end
