@@ -1,0 +1,17 @@
+A Ruby library for interfacing with GeoIQ servers and GeoCommons.com.
+
+Currently Supports 
+
+* Map - load, save, create
+* Dataset - load, upload_data
+
+Working on
+
+* Search
+
+<pre><code class="ruby"> require "geoiq/geoiq"
+
+map = Geoiq::Map.load(61)
+map.title = "A new title"
+map.update
+</code></pre>
