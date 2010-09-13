@@ -10,8 +10,15 @@ Working on
 * Search
 
 <pre><code class="ruby"> require "geoiq/geoiq"
+  
+# Upload a dataset
+dataset = Geoiq::Dataset.new :title => "My New Overlay", :tags => ["api", "rocks"]
+dataset.upload_data "name,latitude,longitude\nBob,-54.0,45.3", "text/csv"
+puts dataset.geoiq_id
 
+# Build a map
 map = Geoiq::Map.load(61)
 map.title = "A new title"
-map.update
+map.save
+
 </code></pre>

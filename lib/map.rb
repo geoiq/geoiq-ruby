@@ -33,10 +33,11 @@ module Geoiq
     end
   
     def add_layer(dataset, options = {})
+      source_id = dataset.is_a?(Dataset) ? dataset.geoiq_id : dataset
       options.merge!({:query => {
         :title => "Test", 
         :subtitle => "Testing",
-        :source => "finder:#{self.geoiq_id}",
+        :source => "finder:#{source_id}",
         :visible => true,
         :opacity => 1.0,
         :styles => {
