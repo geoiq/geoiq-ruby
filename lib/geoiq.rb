@@ -9,7 +9,8 @@ module Geoiq
     # PASSWORD = "password"
 
     base_uri 'http://api-sandbox.geoiq.com'
-    USERNAME = "admin"
+
+    USERNAME = "admin" #change these to your username and password
     PASSWORD = "password"
     # USERNAME = "acme"
     # PASSWORD = "1!Acm3!1"
