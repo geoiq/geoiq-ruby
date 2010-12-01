@@ -1,7 +1,7 @@
 require 'httparty'
 require 'pathname'
 require 'uri'
-
+require 'json'
 dir = Pathname(__FILE__).dirname.expand_path
 
 require dir + "geoiq/geoiq"

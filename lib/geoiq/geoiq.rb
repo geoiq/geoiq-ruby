@@ -9,7 +9,7 @@ module Geoiq
     # PASSWORD = "password"
 
    # base_uri 'http://api-sandbox.geoiq.com'
-    base_uri 'http://localhost.local:4000'
+    base_uri 'http://geoiq.local'
     USERNAME = "admin"
     PASSWORD = "password"
     # USERNAME = "acme"

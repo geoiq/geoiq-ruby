@@ -2,7 +2,7 @@ module Geoiq
   class Dataset < Mapject
 
     attr_accessor :object_path
-    attr_accessor :geoiq_id, :title, :description, :tags, :features
+    attr_accessor :geoiq_id, :title, :description, :tags, :features, :attributes
     
     def self.attributes
       %w{title description tags}
@@ -14,7 +14,7 @@ module Geoiq
       self.title = options[:title] || "Untitled"
       self.description = options[:desciption] || ""
       self.tags = options[:tags] || ""
-     
+      self.attributes = options[:attributes] || {}
     end
 
     def features(options = {})
@@ -24,6 +24,28 @@ module Geoiq
 
       return request.parsed_response
     end
+    
+    def create
+      data = {:title => self.title, :description => self.description, :tags => self.tags, :attributes => self.attributes }
+      request = send_post("#{self.object_path}.json", { :headers => {"Content-Type" => "application/json"},
+            :body => data, :options_as_array => true})
+
+      if request["status"].to_i == 201 && self.geoiq_id.nil?
+        self.geoiq_id = request["location"].match(/(\d+)\.json/)[1]
+      end
+  
+      respond_to_status(request)
+      
+      return request.parsed_response
+    end
+    
+    def add(features = [])      
+      request = send_post("#{self.object_path}/#{self.geoiq_id}/features.json", { :headers => {"Content-Type" => "application/json"}, :body => features.to_json, :options_as_array => true})
+      respond_to_status(request)
+
+      return request.parsed_response
+    end
+    
     # Call a GeoIQ calculation. Returns the id of the resulting dataset.
     def calculate(algorithm, inputs )
       raise "Dataset must be saved for calculation" if self.geoiq_id.nil?
