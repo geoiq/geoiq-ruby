@@ -61,7 +61,7 @@ Note: That some simple requests will work without a valid username and password.
   @map.delete
   @dataset.delete
 
-See the tests, and the API doc for some more. 
+See the tests, and the API doc for some more, and remember to change the URL to point to your GeoIQ instance, usually Geocommons.com :)
 
 
 == Getting Started
@@ -87,3 +87,7 @@ Further examples can be found in the tests
 Creation of new (WMS and Tile) datasets by adding from a URL
 
 Addition of error and response handling
+
+== Help
+
+Add an issue on the github page https://github.com/fortiusone/geoiq-ruby/
