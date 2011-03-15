@@ -1,0 +1,67 @@
+{
+   "name"   =>"Dataset from 'Dataset from 'Dataset from 'Dataset from 'longone' with a 3m buffer' with a 4m buffer' with a 12m buffer' with a 42m buffer",
+   "icon_link"   =>nil,
+   "short_classification"   =>"Y",
+   "title"   =>"Dataset from 'Dataset from 'Dataset from 'Dataset from 'longone' with a 3m buffer' with a 4m buffer' with a 12m buffer' with a 42m buffer",
+   "stats"   =>   {
+
+   },
+   "author"   =>"",
+   "data_attributes"   =>nil,
+   "published"   =>"2011-03-04T22:29:44+00:00   ", "   extent"=>   [
+      -77.1167756551496,
+      38.865677070716,
+      -77.0859138605216,
+      38.8938222556193
+   ],
+   "url_type"   =>nil,
+   "data_type"   =>"Dataset Analysis",
+   "tags"   =>"",
+   "id"   =>1348,
+   "contributor"   =>"admin",
+   "pagination"   =>   {
+      "total"      =>4,
+      "start"      =>0,
+      "sort"      =>nil,
+      "limit"      =>10000
+   },
+   "calculation_params"   =>   [
+      {
+         "calculation"         =>"buffer",
+         "input"         =>         {
+            "ds1"            =>"1347",
+            "unit"            =>"m",
+            "distance"            =>"42"
+         }
+      }
+   ],
+   "features"   =>   [
+      {
+         "j"         =>"long"
+      },
+      {
+         "j"         =>"two"
+      },
+      {
+         "j"         =>"tyh"
+      },
+      {
+         "j"         =>"qwa"
+      }
+   ],
+   "description"   =>"Dataset created by adding a buffer of 42m around the features in 'Dataset from 'Dataset from 'Dataset from 'longone' with a 3m buffer' with a 4m buffer' with a 12m buffer'",
+   "classification"   =>nil,
+   "feature_count"   =>4,
+   "link"   =>"http://localhost.local/overlays/1348.json",
+   "permissions"   =>   [
+      {
+         "group_id"         =>"everyone",
+         "permissions"         =>         {
+            "download"            =>true,
+            "edit"            =>true,
+            "view"            =>true
+         }
+      }
+   ],
+   "source"   =>""
+}

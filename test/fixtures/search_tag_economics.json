@@ -1,0 +1,313 @@
+{
+   "entries":[
+      {
+         "description":null,
+         "title":"iPolitics.ca: Economic Action Plan Announcements, Feb. 24, 2011",
+         "type":"Overlay",
+         "short_classification":null,
+         "permissions":{
+            "edit":false,
+            "view":true,
+            "download":true
+         },
+         "tags":"action, canada, conservative, economic, funding, harper, minister, money, mps, party, plan, prime, spending, stephen",
+         "link":"http://geocommons.com/overlays/95719.json",
+         "author":{
+            "uri":null,
+            "name":"iPolitics.ca"
+         },
+         "created":"2011-02-24T20:04:27Z",
+         "name":"iPolitics.ca: Economic Action Plan Announcements, Feb. 24, 2011",
+         "published":"2011-03-13T17:43:57-04:00",
+         "analyzable":true,
+         "detail_link":"http://geocommons.com/overlays/95719",
+         "contributor":{
+            "uri":"http://geocommons.com/users/ipolitics",
+            "name":"ipolitics"
+         },
+         "feature_count":52,
+         "layer_size":15487,
+         "source":null,
+         "pk":95719,
+         "id":"Overlay:95719",
+         "icon_path":null,
+         "bbox":"42.336357,-135.1359,60.766113,-62.641273"
+      },
+      {
+         "description":null,
+         "title":"iPolitics.ca: Economic Action Plan Announcements, Feb. 24, 2011",
+         "type":"Overlay",
+         "short_classification":null,
+         "permissions":{
+            "edit":false,
+            "view":true,
+            "download":true
+         },
+         "tags":"action, canada, conservative, economic, funding, harper, minister, money, mps, party, plan, prime, spending, stephen",
+         "link":"http://geocommons.com/overlays/95718.json",
+         "author":{
+            "uri":null,
+            "name":"iPolitics.ca"
+         },
+         "created":"2011-02-24T19:51:49Z",
+         "name":"iPolitics.ca: Economic Action Plan Announcements, Feb. 24, 2011",
+         "published":"2011-03-13T17:43:57-04:00",
+         "analyzable":true,
+         "detail_link":"http://geocommons.com/overlays/95718",
+         "contributor":{
+            "uri":"http://geocommons.com/users/ipolitics",
+            "name":"ipolitics"
+         },
+         "feature_count":52,
+         "layer_size":15487,
+         "source":null,
+         "pk":95718,
+         "id":"Overlay:95718",
+         "icon_path":null,
+         "bbox":"42.336357,-135.1359,60.766113,-62.641273"
+      },
+      {
+         "description":null,
+         "title":"iPolitics.ca: Economic Action Plan Announcements, Feb. 24, 2011",
+         "type":"Overlay",
+         "short_classification":null,
+         "permissions":{
+            "edit":false,
+            "view":true,
+            "download":true
+         },
+         "tags":"action, canada, conservative, economic, funding, money, mps, party, plan, spending",
+         "link":"http://geocommons.com/overlays/95717.json",
+         "author":{
+            "uri":null,
+            "name":"iPolitics.ca"
+         },
+         "created":"2011-02-24T19:34:03Z",
+         "name":"iPolitics.ca: Economic Action Plan Announcements, Feb. 24, 2011",
+         "published":"2011-03-13T17:43:57-04:00",
+         "analyzable":true,
+         "detail_link":"http://geocommons.com/overlays/95717",
+         "contributor":{
+            "uri":"http://geocommons.com/users/ipolitics",
+            "name":"ipolitics"
+         },
+         "feature_count":52,
+         "layer_size":15494,
+         "source":null,
+         "pk":95717,
+         "id":"Overlay:95717",
+         "icon_path":null,
+         "bbox":"41.871483,-135.1359,60.766113,80.263756"
+      },
+      {
+         "description":null,
+         "title":"Lehigh County PA Diversity Index by Block Group (ScanUS 2010 Est.)",
+         "type":"Overlay",
+         "short_classification":null,
+         "permissions":{
+            "edit":false,
+            "view":true,
+            "download":true
+         },
+         "tags":"2000, allentown, allentown pa, block, census, center city allentown, county, david f zimmerman, demographics, disparity, diversity, economics, ethnic, geography, geogrpahy, gis, group, lehigh, lehigh county, maps, race, tract2000, urban economics",
+         "link":"http://geocommons.com/overlays/86868.json",
+         "author":{
+            "uri":null,
+            "name":null
+         },
+         "created":"2011-01-23T21:24:34Z",
+         "name":"Lehigh County PA Diversity Index by Block Group (ScanUS 2010 Est.)",
+         "published":"2011-03-13T17:43:57-04:00",
+         "analyzable":true,
+         "detail_link":"http://geocommons.com/overlays/86868",
+         "contributor":{
+            "uri":"http://geocommons.com/users/davidfehr",
+            "name":"davidfehr"
+         },
+         "feature_count":236,
+         "layer_size":1073349,
+         "source":null,
+         "pk":86868,
+         "id":"Overlay:86868",
+         "icon_path":null,
+         "bbox":"40.41845,-75.89147,40.787388,-75.33392"
+      },
+      {
+         "description":null,
+         "title":"Ethnic Race Diversity Index - Lehigh County PA - US Census 2000 Block Group Level",
+         "type":"Overlay",
+         "short_classification":null,
+         "permissions":{
+            "edit":false,
+            "view":true,
+            "download":true
+         },
+         "tags":"2000, allentown, allentown pa, block, census, center city allentown, david f zimmerman, demographics, disparity, diversity, economics, ethnic, geography, gis, group, lehigh, lehigh county, maps, race, urban economics",
+         "link":"http://geocommons.com/overlays/86843.json",
+         "author":{
+            "uri":null,
+            "name":null
+         },
+         "created":"2011-01-23T20:28:30Z",
+         "name":"Ethnic Race Diversity Index - Lehigh County PA - US Census 2000 Block Group Level",
+         "published":"2011-03-13T17:43:57-04:00",
+         "analyzable":true,
+         "detail_link":"http://geocommons.com/overlays/86843",
+         "contributor":{
+            "uri":"http://geocommons.com/users/davidfehr",
+            "name":"davidfehr"
+         },
+         "feature_count":236,
+         "layer_size":1180625,
+         "source":null,
+         "pk":86843,
+         "id":"Overlay:86843",
+         "icon_path":null,
+         "bbox":"40.41845,-75.89147,40.787388,-75.33351"
+      },
+      {
+         "description":"HUD Aggregated USPS Administrative Data On Address Vacancies by the percentage of vacant residences as of September 30, 2010.",
+         "title":"HUD Aggregated USPS Administrative Data On Address Vacancies - % of vacant residences",
+         "type":"Map",
+         "short_classification":null,
+         "permissions":{
+            "edit":false,
+            "view":true,
+            "download":true
+         },
+         "tags":"allentown pa, center city allentown, economics, urban decay, urban economics, vacant housing",
+         "link":"http://geocommons.com/maps/47056",
+         "author":{
+            "uri":"http://geocommons.com/users/davidfehr",
+            "name":"davidfehr"
+         },
+         "created":"2011-01-22T23:41:20Z",
+         "pk":47056,
+         "id":"Map:47056",
+         "bbox":"-76.14414,40.39309,-74.991264,40.848083"
+      },
+      {
+         "description":"The Economic Area service areas are based on the Economic Areas delineated by the Regional Economic Analysis Division, Bureau of Economic Analysis, U.S. Department of Commerce February 1995 (1-172), with the following additions: Guam and the Northern Mariana Islands (173), Puerto Rico and the U.S. Virgin Islands (174), and American Samoa (175). The Commission has also designated the Gulf of Mexico (176) as an additional Economic Area. However, the Location and Monitoring Service (LMS) is currently the only service which implements the Gulf of Mexico (176) as a separate license area.",
+         "title":"Economic Area service areas, FCC, USA",
+         "type":"Overlay",
+         "short_classification":null,
+         "permissions":{
+            "edit":true,
+            "view":true,
+            "download":true
+         },
+         "tags":"areas, bea, boundaries, economic, referenceboundary, usbound",
+         "link":"http://geocommons.com/overlays/60862.json",
+         "author":{
+            "uri":null,
+            "name":null
+         },
+         "created":"2010-08-12T18:16:45Z",
+         "name":"Economic Area service areas, FCC, USA",
+         "published":"2011-03-13T17:43:57-04:00",
+         "analyzable":true,
+         "detail_link":"http://geocommons.com/overlays/60862",
+         "contributor":{
+            "uri":"http://geocommons.com/users/Bill",
+            "name":"Bill"
+         },
+         "feature_count":173,
+         "layer_size":0,
+         "source":null,
+         "pk":60862,
+         "id":"Overlay:60862",
+         "icon_path":null,
+         "bbox":"17.675823,-179.1448,71.33265,179.76416"
+      },
+      {
+         "description":"The Economic Area service areas are based on the Economic Areas delineated by the Regional Economic Analysis Division, Bureau of Economic Analysis, U.S. Department of Commerce February 1995 (1-172), with the following additions: Guam and the Northern Mariana Islands (173), Puerto Rico and the U.S. Virgin Islands (174), and American Samoa (175). The Commission has also designated the Gulf of Mexico (176) as an additional Economic Area. However, the Location and Monitoring Service (LMS) is currently the only service which implements the Gulf of Mexico (176) as a separate license area.",
+         "title":"Economic Area service areas, FCC, USA",
+         "type":"Overlay",
+         "short_classification":null,
+         "permissions":{
+            "edit":true,
+            "view":true,
+            "download":true
+         },
+         "tags":"areas, bea, boundaries, economic, referenceboundary, usbound",
+         "link":"http://geocommons.com/overlays/60859.json",
+         "author":{
+            "uri":null,
+            "name":null
+         },
+         "created":"2010-08-12T17:46:02Z",
+         "name":"Economic Area service areas, FCC, USA",
+         "published":"2011-03-13T17:43:57-04:00",
+         "analyzable":true,
+         "detail_link":"http://geocommons.com/overlays/60859",
+         "contributor":{
+            "uri":"http://geocommons.com/users/Bill",
+            "name":"Bill"
+         },
+         "feature_count":176,
+         "layer_size":0,
+         "source":null,
+         "pk":60859,
+         "id":"Overlay:60859",
+         "icon_path":null,
+         "bbox":"-14.60521,-179.1448,71.33265,179.76416"
+      },
+      {
+         "description":"Oil Spill's Economic Impacts",
+         "title":"Oil Spill Economic Impact",
+         "type":"Map",
+         "short_classification":null,
+         "permissions":{
+            "edit":false,
+            "view":true,
+            "download":true
+         },
+         "tags":"economic, impact, oil, spill",
+         "link":"http://geocommons.com/maps/19750",
+         "author":{
+            "uri":"http://geocommons.com/users/mbaram",
+            "name":"mbaram"
+         },
+         "created":"2010-07-14T16:13:02Z",
+         "pk":19750,
+         "id":"Map:19750",
+         "bbox":"-74.39232,23.786318,-102.29759,33.432327"
+      },
+      {
+         "description":"An in-depth map portraying the far-reaching econoimic impact of the Gulf oil spill.",
+         "title":"Oil Spill's Economic Impact",
+         "type":"Overlay",
+         "short_classification":null,
+         "permissions":{
+            "edit":false,
+            "view":true,
+            "download":true
+         },
+         "tags":"economic, impact, oil, spill",
+         "link":"http://geocommons.com/overlays/58704.json",
+         "author":{
+            "uri":null,
+            "name":null
+         },
+         "created":"2010-07-14T16:04:30Z",
+         "name":"Oil Spill's Economic Impact",
+         "published":"2011-03-13T17:43:57-04:00",
+         "analyzable":true,
+         "detail_link":"http://geocommons.com/overlays/58704",
+         "contributor":{
+            "uri":"http://geocommons.com/users/mbaram",
+            "name":"mbaram"
+         },
+         "feature_count":25,
+         "layer_size":0,
+         "source":null,
+         "pk":58704,
+         "id":"Overlay:58704",
+         "icon_path":null,
+         "bbox":"27.876394,-94.7977,37.653996,-76.4439"
+      }
+   ],
+   "totalResults":176,
+   "next":"http://geocommons.com/search.json?page=2\u0026query=tag:economics",
+   "itemsPerPage":10
+}

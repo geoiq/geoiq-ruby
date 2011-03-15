@@ -1,0 +1,313 @@
+{
+   "entries":[
+      {
+         "description":"This point data is the location of quilt squares as placed on the sides of barns and building in McMinn County",
+         "title":"McMinn County AQT Quilt Trail",
+         "type":"Overlay",
+         "short_classification":null,
+         "permissions":{
+            "edit":false,
+            "view":true,
+            "download":true
+         },
+         "tags":"county, mcminn, quilts, rcd, tennessee",
+         "link":"http://geocommons.com/overlays/67202.json",
+         "author":{
+            "uri":null,
+            "name":"Randal Hale"
+         },
+         "created":"2010-10-07T22:23:36Z",
+         "name":"McMinn County AQT Quilt Trail",
+         "detail_link":"http://geocommons.com/overlays/67202",
+         "published":"2011-03-13T17:29:14-04:00",
+         "analyzable":true,
+         "contributor":{
+            "uri":"http://geocommons.com/users/rjhale1971",
+            "name":"rjhale1971"
+         },
+         "feature_count":29,
+         "layer_size":0,
+         "source":null,
+         "pk":67202,
+         "id":"Overlay:67202",
+         "icon_path":null,
+         "bbox":"35.334526,-84.73383,35.5942,-84.48675"
+      },
+      {
+         "description":null,
+         "title":"Search Point",
+         "type":"Overlay",
+         "short_classification":null,
+         "permissions":{
+            "edit":true,
+            "view":true,
+            "download":true
+         },
+         "tags":null,
+         "link":"http://geocommons.com/overlays/64008.json",
+         "author":{
+            "uri":null,
+            "name":null
+         },
+         "created":"2010-09-20T13:51:40Z",
+         "name":"Search Point",
+         "detail_link":"http://geocommons.com/overlays/64008",
+         "published":"2011-03-13T17:29:14-04:00",
+         "analyzable":true,
+         "contributor":{
+            "uri":"http://geocommons.com/users/Bill",
+            "name":"Bill"
+         },
+         "feature_count":1,
+         "layer_size":0,
+         "source":null,
+         "pk":64008,
+         "id":"Overlay:64008",
+         "icon_path":null,
+         "bbox":"38.254845,-85.76637,38.254845,-85.76637"
+      },
+      {
+         "description":null,
+         "title":"Search Point and Distance buffer",
+         "type":"Map",
+         "short_classification":null,
+         "permissions":{
+            "edit":false,
+            "view":true,
+            "download":true
+         },
+         "tags":null,
+         "link":"http://geocommons.com/maps/25084",
+         "author":{
+            "uri":"http://geocommons.com/users/Bill",
+            "name":"Bill"
+         },
+         "created":"2010-09-20T13:49:36Z",
+         "pk":25084,
+         "id":"Map:25084",
+         "bbox":"-85.73187,38.237,-85.80054,38.263725"
+      },
+      {
+         "description":"The point shapefile shows locations of the the coal mines in West Virginia where the explosion resulted in 25 fatalities.  ",
+         "title":"MSHA, US Dept of Labor, Location of coal mine disaster, West Virginia, USA, 2010",
+         "type":"Overlay",
+         "short_classification":null,
+         "permissions":{
+            "edit":false,
+            "view":true,
+            "download":true
+         },
+         "tags":"accidents, coal, disaster, mines, mining",
+         "link":"http://geocommons.com/overlays/36251.json",
+         "author":{
+            "uri":null,
+            "name":null
+         },
+         "created":"2010-04-07T12:58:28Z",
+         "name":"MSHA, US Dept of Labor, Location of coal mine disaster, West Virginia, USA, 2010",
+         "detail_link":"http://geocommons.com/overlays/36251",
+         "published":"2011-03-13T17:29:14-04:00",
+         "analyzable":true,
+         "contributor":{
+            "uri":"http://geocommons.com/users/aark",
+            "name":"aark"
+         },
+         "feature_count":3,
+         "layer_size":0,
+         "source":null,
+         "pk":36251,
+         "id":"Overlay:36251",
+         "icon_path":null,
+         "bbox":"37.854946,-81.55053,37.91454,-81.529854"
+      },
+      {
+         "description":"Points collected for use in exploring various web based geographic programs.",
+         "title":"AB Tech GIS Walkabout",
+         "type":"Map",
+         "short_classification":null,
+         "permissions":{
+            "edit":false,
+            "view":true,
+            "download":true
+         },
+         "tags":null,
+         "link":"http://geocommons.com/maps/4332",
+         "author":{
+            "uri":"http://geocommons.com/users/dougtape",
+            "name":"dougtape"
+         },
+         "created":"2009-04-10T14:23:16Z",
+         "pk":4332,
+         "id":"Map:4332",
+         "bbox":"-82.53306,35.556694,-82.57632,35.57764"
+      },
+      {
+         "description":"gps points",
+         "title":"AB Tech",
+         "type":"Overlay",
+         "short_classification":null,
+         "permissions":{
+            "edit":false,
+            "view":true,
+            "download":true
+         },
+         "tags":"college",
+         "link":"http://geocommons.com/overlays/11715.json",
+         "author":{
+            "uri":null,
+            "name":null
+         },
+         "created":"2009-04-10T13:03:22Z",
+         "name":"AB Tech",
+         "detail_link":"http://geocommons.com/overlays/11715",
+         "published":"2011-03-13T17:29:14-04:00",
+         "analyzable":true,
+         "contributor":{
+            "uri":"http://geocommons.com/users/berto650",
+            "name":"berto650"
+         },
+         "feature_count":10,
+         "layer_size":0,
+         "source":null,
+         "pk":11715,
+         "id":"Overlay:11715",
+         "icon_path":null,
+         "bbox":"35.56848,-82.55399,35.56956,-82.55226"
+      },
+      {
+         "description":"This dataset was created from the USDA Farmers Market database listing. The point data is usually the exact location of the market but may sometimes be the general area. Attributes include contact information, hours, and if the market takes food stamps.",
+         "title":"USDA, Farmers Markets, North Carolina, 2008",
+         "type":"Overlay",
+         "short_classification":null,
+         "permissions":{
+            "edit":false,
+            "view":true,
+            "download":true
+         },
+         "tags":"agriculture, farmers, food, market, markets",
+         "link":"http://geocommons.com/overlays/9492.json",
+         "author":{
+            "uri":null,
+            "name":null
+         },
+         "created":"2009-02-12T13:34:45Z",
+         "name":"USDA, Farmers Markets, North Carolina, 2008",
+         "detail_link":"http://geocommons.com/overlays/9492",
+         "published":"2011-03-13T17:29:14-04:00",
+         "analyzable":true,
+         "contributor":{
+            "uri":"http://geocommons.com/users/emily",
+            "name":"emily"
+         },
+         "feature_count":109,
+         "layer_size":0,
+         "source":null,
+         "pk":9492,
+         "id":"Overlay:9492",
+         "icon_path":null,
+         "bbox":"33.96046,-83.42155,36.497623,-76.237526"
+      },
+      {
+         "description":"The North Carolina Department of Administration, State Property Office, in cooperation with the NC Center for Geographic Information and Analysis, developed the GIS data set, State-owned Complexes, to define the exterior boundaries of state-owned complexes in North Carolina; e.g.:DOT maintenance yards, state parks, state universities, etc. This point layer is a subset of the full State Owned Complexes and contains only public universities.\n\nThis data was created to assist governmental agencies and others in making resource management decisions through use of a Geographic Information System &#40;GIS&#41;.\n\n",
+         "title":"North Carolina Center for Geographic Information and Analysis (NCCGIA), Universities - Public, North Carolina, 2003",
+         "type":"Overlay",
+         "short_classification":null,
+         "permissions":{
+            "edit":false,
+            "view":true,
+            "download":true
+         },
+         "tags":"carolina, colleges, education, nccgia, north, public, universities",
+         "link":"http://geocommons.com/overlays/2718.json",
+         "author":{
+            "uri":null,
+            "name":null
+         },
+         "created":"2008-07-10T09:23:13Z",
+         "name":"North Carolina Center for Geographic Information and Analysis (NCCGIA), Universities - Public, North Carolina, 2003",
+         "detail_link":"http://geocommons.com/overlays/2718",
+         "published":"2011-03-13T17:29:14-04:00",
+         "analyzable":true,
+         "contributor":{
+            "uri":"http://geocommons.com/users/Burkey",
+            "name":"Burkey"
+         },
+         "feature_count":17,
+         "layer_size":0,
+         "source":null,
+         "pk":2718,
+         "id":"Overlay:2718",
+         "icon_path":null,
+         "bbox":"34.2246,-83.18433,36.28132,-76.2137"
+      },
+      {
+         "description":"In the late 1990s, the North Carolina Department of Environment and Natural Resources, Division of Water Quality developed a GIS data set representing point locations of intensive animal operations in North Carolina. In 2003, CGIA used digital ortho photography from 1998 to verify the DWQ points for swine operations and to identify additional swine lagoons and barns visible in the photos. The intention is to display patterns of swine operations for planning and impact analysis without including attributes of the operations. Matching points to DWQ permits, for example, would take more research and processing.\n\nThese data were created to assist governmental agencies and others in making resource management decisions through use of a Geographic Information System &#40;GIS&#41;.",
+         "title":"North Carolina Center for Geographic Information and Analysis (NCCGIA), Swine Lagoons, North Carolina, 2003",
+         "type":"Overlay",
+         "short_classification":null,
+         "permissions":{
+            "edit":false,
+            "view":true,
+            "download":true
+         },
+         "tags":"agricultue, carolina, environment, health, lagoons, nccgia, north, swine, water",
+         "link":"http://geocommons.com/overlays/2687.json",
+         "author":{
+            "uri":null,
+            "name":null
+         },
+         "created":"2008-07-09T18:08:37Z",
+         "name":"North Carolina Center for Geographic Information and Analysis (NCCGIA), Swine Lagoons, North Carolina, 2003",
+         "detail_link":"http://geocommons.com/overlays/2687",
+         "published":"2011-03-13T17:29:14-04:00",
+         "analyzable":true,
+         "contributor":{
+            "uri":"http://geocommons.com/users/Burkey",
+            "name":"Burkey"
+         },
+         "feature_count":4148,
+         "layer_size":0,
+         "source":null,
+         "pk":2687,
+         "id":"Overlay:2687",
+         "icon_path":null,
+         "bbox":"34.006687,-81.842674,36.544453,-76.02255"
+      },
+      {
+         "description":"The North Carolina State Energy Office in the Department of Administration supported the NC Center for Geographic Information and Analysis to develop a point layer of landfill locations in North Carolina, based on the inventory prepeared by the US EPA Landfill Methane Outreach Program. This set of Landfill Methane Outreach Program (LMOP) Landfill Sites represent sites with methane gas generation potential. Methane gas is a byproduct of solid waste decomposition in landfills. The file identifies landfills in North Carolina from the LMOP Landfill Project, verfied using information provided by the Division of Waste Management, NC Department of Environment and Natural Resources. In addition, CGIA created 10-mile buffers around each landfill point and analyzed company locations within the buffers based on a dataset derived for the State Energy Office by the Appalachian Regional Development Institute at Appalachian State University from a Harris Company commercial database.\n\nThis data set was created to assist governmental agencies and others in making resource management decisions through use of a Geographic Information System &#40;GIS&#41;.",
+         "title":"North Carolina Center for Geographic Information and Analysis (NCCGIA), Landfills, North Carolina, 1970",
+         "type":"Overlay",
+         "short_classification":null,
+         "permissions":{
+            "edit":false,
+            "view":true,
+            "download":true
+         },
+         "tags":"carolina, environment, landfills, nccgia, north, waste",
+         "link":"http://geocommons.com/overlays/2610.json",
+         "author":{
+            "uri":null,
+            "name":null
+         },
+         "created":"2008-07-08T10:47:23Z",
+         "name":"North Carolina Center for Geographic Information and Analysis (NCCGIA), Landfills, North Carolina, 1970",
+         "detail_link":"http://geocommons.com/overlays/2610",
+         "published":"2011-03-13T17:29:14-04:00",
+         "analyzable":true,
+         "contributor":{
+            "uri":"http://geocommons.com/users/Burkey",
+            "name":"Burkey"
+         },
+         "feature_count":126,
+         "layer_size":0,
+         "source":null,
+         "pk":2610,
+         "id":"Overlay:2610",
+         "icon_path":null,
+         "bbox":"34.05792,-83.904106,36.518032,-75.93781"
+      }
+   ],
+   "next":"http://geocommons.com/search.json?bbox=-87.2,33.4,-75.9,38.4\u0026limit=10\u0026page=2\u0026query=points",
+   "totalResults":14,
+   "itemsPerPage":10
+}

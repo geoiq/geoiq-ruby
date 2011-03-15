@@ -1,0 +1,89 @@
+README.rdoc
+
+= Ruby API Wrapper around the GeoIQ and GeoCommons API
+
+This is a ruby gem library that wraps around the Geocommons and GeoIQ REST API.
+
+== Features
+
+You can search for datasets, and maps. 
+
+Upload new datasets from a CSV file and edit existing ones.
+
+Get the features of a dataset and filter them according to a number of parameters, for example, by bounding box, or by attribute.
+
+Create, edit and update maps with layers
+
+Note: That some simple requests will work without a valid username and password. 
+
+== Some examples
+
+
+  @geoiq = Geoiq.client("http://geocommons.com", "user", "password")
+  
+  # get dataset and features
+  dataset = geoiq.dataset.find(1348)
+  features = dataset.features
+
+  # get the geometries in non hexwkb 
+  features = dataset.features({:hex_geometry => 0})
+
+  # get features with a custom filter
+  filtered_features = @dataset.features({"filter[PERIMETER][][max]" => 0.3})
+  bbox_filtered_features = @dataset.features({:bbox => '-87.2,33.4,-75.9,38.4'})
+
+  # Search
+  @geoiq.search("points", {:bbox => '-87.2,33.4,-75.9,38.4', :limit=> 10})
+  @geoiq.search("tag:economics")
+
+  # Edit dataset
+  @dataset.update(:title => "Garden Scultures", :description => "lovely jubbly")
+
+  # Upload CSV
+  csv_file = 'data/sculptures.csv'
+  @dataset = @geoiq.dataset.csv_upload(csv_file, {:title =>"garden sculptures"})
+
+  # Upload SHP
+  @dataset = @geoiq.dataset.shp_upload("data/simple.shp", "data/simple.dbf", "data/simple.shx")
+
+  # Create a new map
+  map = @geoiq.map(:title => "my empty map")
+  @geoiq_map = map.create
+
+  #get a map and it's layers
+  @map = @geoiq.map.find(239)
+  layer_titles =  @map.layers.map{ |l| l['title']}
+
+  #add a dataset to a map as a new layer
+  @map.add_layer(1466)
+
+  #deleting map or dataset
+  @map.delete
+  @dataset.delete
+
+See the tests, and the API doc for some more. 
+
+
+== Getting Started
+
+To package the gem:
+  rake gem              # Build the gem file into pkg/geoiq-0.0.1.gem
+
+To install the gem
+  sudo rake gem:install      # Installs the gem
+
+
+== Dependencies
+
+The gem needs httparty and json gems.
+If you want to run the tests, you would need shoulda, fakeweb and geo_ruby
+
+Further examples can be found in the tests
+
+== TODO
+
+=== Coming soon:
+
+Creation of new (WMS and Tile) datasets by adding from a URL
+
+Addition of error and response handling
