@@ -1,4 +1,4 @@
-A Ruby library for interfacing with GeoIQ servers and GeoCommons.com.
+Ruby library for interfacing with GeoIQ servers and GeoCommons.com.
 
 Currently Supports 
 
