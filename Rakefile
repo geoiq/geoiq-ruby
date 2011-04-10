@@ -6,7 +6,7 @@ require 'rake/gempackagetask'
 
 spec = Gem::Specification.new do |s|
   s.name = "geoiq"
-  s.version = "0.0.1"
+  s.version = "0.0.2"
   s.author = "Tim Waters"
   s.email = "tim.waters@fortiusone.com"
   s.homepage = "http://github.com/fortiusone/geoiq_gem"
