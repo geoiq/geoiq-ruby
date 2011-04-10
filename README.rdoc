@@ -46,6 +46,12 @@ Note: That some simple requests will work without a valid username and password.
   # Upload SHP
   @dataset = @geoiq.dataset.shp_upload("data/simple.shp", "data/simple.dbf", "data/simple.shx")
 
+  # Upload by URL (type = csv,kml,rss,wms,tile)
+  @dataset = @geoiq.dataset.url_upload("http://geothings.net/geoiq/simple_testing.csv", {:type => "csv"})
+
+  # Add WMS server by URL
+  @geoiq.dataset.url_upload("http://tilecache.osgeo.org/wms-c/tilecache.py?request=GetCapabilities&service=WMS", {:type=>"wms", :title=>"VMAP FOR THE WMS WIN"})
+
   # Create a new map
   map = @geoiq.map(:title => "my empty map")
   @geoiq_map = map.create
@@ -60,6 +66,8 @@ Note: That some simple requests will work without a valid username and password.
   #deleting map or dataset
   @map.delete
   @dataset.delete
+
+
 
 See the tests, and the API doc for some more, and remember to change the URL to point to your GeoIQ instance, usually Geocommons.com :)
 
@@ -83,8 +91,6 @@ Further examples can be found in the tests
 == TODO
 
 === Coming soon:
-
-Creation of new (WMS and Tile) datasets by adding from a URL
 
 Addition of error and response handling
 

@@ -44,10 +44,10 @@ class Geoiq
 
     def features(options={})
       requires_geoiq_id
-   
+
       response = request(:get, "/datasets/#{self.geoiq_id}/features.json", {:query => options})
       features = JSON.parse(response.body)
-   
+
 
     end
 
@@ -56,9 +56,9 @@ class Geoiq
 
       content = File.read(filename)
       response = request(:post, "/datasets.json",
-        {:body => content,
-          :headers =>{ "Content-Type" => "#{type}"},
-          :query => options})
+      {:body => content,
+        :headers =>{ "Content-Type" => "#{type}"},
+      :query => options})
 
       id =  response.headers["location"].match(/(\d+)\.json/)[1].to_i
 
@@ -68,20 +68,31 @@ class Geoiq
     def shp_upload(shp_file, dbf_file, shx_file)
 
       body = shp_upload_body(shp_file, dbf_file, shx_file)
-        response = request(:post, "/datasets.json",
-        {:body => body,
-          :headers =>{ "Content-Type" => "multipart/form-data, boundary=89d6e3836995"}
-         })
+      response = request(:post, "/datasets.json",
+      {:body => body,
+        :headers =>{ "Content-Type" => "multipart/form-data, boundary=89d6e3836995"}
+      })
       id =  response.headers["location"].match(/(\d+)\.json/)[1].to_i
 
       return find(id)
 
     end
 
+    # Create a new dataset by passing in a url, and optional type
+    # type = csv,kml,rss, wms, tile
+    def url_upload(url, options={})
+      query = {:url => url}.merge(options)
+      response = request(:post, "/datasets.json", {:query => query})
+      id =  response.headers["location"].match(/(\d+)\.json/)[1].to_i
+
+      return find(id)
+    end
+
+    private
 
     def shp_upload_body(shp_file, dbf_file, shx_file)
       boundary = "89d6e3836995"
-      
+
       body = []
 
       body << "--#{boundary}\r\n"

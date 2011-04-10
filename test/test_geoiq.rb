@@ -77,7 +77,7 @@ class TestGeoiq < Test::Unit::TestCase
         assert_equal 10, results["entries"].size
       end
 
-      
+
       should "find anything with bbox and limit" do
         results = @geoiq.search("points", {:bbox => '-87.2,33.4,-75.9,38.4', :limit=> 10})
         assert_not_nil results
@@ -97,6 +97,10 @@ class TestGeoiq < Test::Unit::TestCase
 
   end
 
+  #
+  # TODO - Below this, swap out local urls with fakeweb + fixtures
+  #
+
   context "when authenticated with a CSV file uploaded" do
     setup do
       @geoiq = Geoiq.client("http://localhost.local", "admin", "password")
@@ -109,7 +113,7 @@ class TestGeoiq < Test::Unit::TestCase
     teardown do
       @dataset.delete
     end
-    
+
 
     should "be able to get features" do
       features = @dataset.features
@@ -143,7 +147,7 @@ class TestGeoiq < Test::Unit::TestCase
       teardown do
         @dataset.delete
       end
-      
+
       should "be able to upload it and get the newly created dataset" do
         assert_not_nil @dataset
         assert_equal "simple", @dataset.title
@@ -154,14 +158,62 @@ class TestGeoiq < Test::Unit::TestCase
         assert_equal true, result
       end
 
-      should "be able to edit and update the dataset"
+
+    end
+
+    context "Add a CSV dataset by URL" do
+      setup do
+        @geoiq = Geoiq.client("http://localhost.local", "admin", "password")
+        @dataset = @geoiq.dataset.url_upload("http://geothings.net/geoiq/simple_testing.csv", {:type => "csv"})
+      end
+      teardown do
+        @dataset.delete
+      end
+
+      should "be able to be upload and get the newly created dataset" do
+        assert_not_nil @dataset
+        assert_equal "Untitled", @dataset.title
+        assert_equal 4, @dataset.feature_count
+      end
 
     end
 
     context "Add a WMS dataset by URL" do
-      should "be able to be downloaded"
-      should "be able to be updated"
+      setup do
+        @geoiq = Geoiq.client("http://localhost.local", "admin", "password")
+        @dataset = @geoiq.dataset.url_upload("http://tilecache.osgeo.org/wms-c/tilecache.py?request=GetCapabilities&service=WMS", {:type=>"wms", :title=>"Everyone loves WMS"})
+      end
+      teardown do
+        @dataset.delete
+      end
+
+      should "be able to be upload and get the newly created dataset" do
+        assert_not_nil @dataset
+        assert_equal "Everyone loves WMS", @dataset.title
+        assert_equal 'WMS', @dataset.data_type
+      end
+
     end
+
+    context "Add a Tile dataset by URL" do
+      setup do
+        @geoiq = Geoiq.client("http://localhost.local", "admin", "password")
+        @dataset = @geoiq.dataset.url_upload("http://otile1.mqcdn.com/tiles/1.0.0/osm/{Z}/{X}/{Y}.png", {:type=>"tile", :title=>"OpenStreetMap", :citation_url => "http://openstreetmap.org"})
+      end
+      teardown do
+        @dataset.delete
+      end
+
+      should "be able to be upload and get the newly created dataset" do
+        assert_not_nil @dataset
+        assert_equal "OpenStreetMap", @dataset.title
+        assert_equal "Tiles", @dataset.data_type
+      end
+
+    end
+
+
+
   end
 
   context "Maps" do
@@ -175,7 +227,7 @@ class TestGeoiq < Test::Unit::TestCase
     teardown do
       @geoiq_map.delete
     end
-    
+
     should "be able to create map" do
       assert_not_nil @geoiq_map.geoiq_id
     end
@@ -186,7 +238,7 @@ class TestGeoiq < Test::Unit::TestCase
       titles =  @map.layers.map{ |l| l['title']}
       assert_equal ["Roads", "Place Names", "garden sculptures"].sort, titles.sort
     end
-    
+
     should "be able to add a layer to a map" do
       index  = @geoiq_map.add_layer(1466)
       assert_equal 0, index
@@ -201,6 +253,7 @@ class TestGeoiq < Test::Unit::TestCase
 
 
 
-  
+
 
 end
+
