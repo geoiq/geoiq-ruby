@@ -13,7 +13,7 @@ class Geoiq
       self.title = options[:title] || "Untitled Map"
       self.tags = (options[:tags] || []).join(",")
       self.extent = options[:extent] || [-180,-90,180,90]
-      self.basemap = options[:extent] || "Acetate"
+      self.basemap = options[:basemap] || "Acetate"
       self.layers = options[:layers] || []
       super
     end

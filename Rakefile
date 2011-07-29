@@ -6,9 +6,9 @@ require 'rake/gempackagetask'
 
 spec = Gem::Specification.new do |s|
   s.name = "geoiq"
-  s.version = "0.0.2"
+  s.version = "0.0.3"
   s.author = "Tim Waters"
-  s.email = "tim.waters@fortiusone.com"
+  s.email = "tim.waters@geoiq.com"
   s.homepage = "http://github.com/fortiusone/geoiq_gem"
   s.platform = Gem::Platform::RUBY
   s.summary = "API Wrapper around Geocommons website and the GeoIQ applications"

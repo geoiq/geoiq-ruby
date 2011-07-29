@@ -2,6 +2,10 @@ require 'helper'
 
 class TestGeoiq < Test::Unit::TestCase
 
+  GEOIQ_URL = "http://geocommons.com"
+  USERNAME = "wobble"
+  PASSWORD = "wibble"
+
   context "when unauthenticated" do #(and configured to allow unauthenticated logins)
     setup do
       @geoiq = Geoiq.client("http://geocommons.com", "wobble", "wibble")
@@ -98,12 +102,12 @@ class TestGeoiq < Test::Unit::TestCase
   end
 
   #
-  # TODO - Below this, swap out local urls with fakeweb + fixtures
+  # TODO - Below this, use with fakeweb + fixtures
   #
 
   context "when authenticated with a CSV file uploaded" do
     setup do
-      @geoiq = Geoiq.client("http://localhost.local", "admin", "password")
+      @geoiq = Geoiq.client(GEOIQ_URL, USERNAME, PASSWORD)
       csv_file = 'data/sculptures.csv'
       @dataset = @geoiq.dataset.csv_upload(csv_file, {:title =>"garden sculptures"})
       assert_not_nil @dataset
@@ -135,7 +139,7 @@ class TestGeoiq < Test::Unit::TestCase
 
   context "when authenticated" do
     setup do
-      @geoiq = Geoiq.client("http://localhost.local", "admin", "password")
+      @geoiq = Geoiq.client(GEOIQ_URL, USERNAME, PASSWORD)
     end
 
     context "Shapefile upload" do
@@ -163,7 +167,7 @@ class TestGeoiq < Test::Unit::TestCase
 
     context "Add a CSV dataset by URL" do
       setup do
-        @geoiq = Geoiq.client("http://localhost.local", "admin", "password")
+        @geoiq = Geoiq.client(GEOIQ_URL, USERNAME, PASSWORD)
         @dataset = @geoiq.dataset.url_upload("http://geothings.net/geoiq/simple_testing.csv", {:type => "csv"})
       end
       teardown do
@@ -180,7 +184,7 @@ class TestGeoiq < Test::Unit::TestCase
 
     context "Add a WMS dataset by URL" do
       setup do
-        @geoiq = Geoiq.client("http://localhost.local", "admin", "password")
+        @geoiq = Geoiq.client(GEOIQ_URL, USERNAME, PASSWORD)
         @dataset = @geoiq.dataset.url_upload("http://tilecache.osgeo.org/wms-c/tilecache.py?request=GetCapabilities&service=WMS", {:type=>"wms", :title=>"Everyone loves WMS"})
       end
       teardown do
@@ -197,7 +201,7 @@ class TestGeoiq < Test::Unit::TestCase
 
     context "Add a Tile dataset by URL" do
       setup do
-        @geoiq = Geoiq.client("http://localhost.local", "admin", "password")
+        @geoiq = Geoiq.client(GEOIQ_URL, USERNAME, PASSWORD)
         @dataset = @geoiq.dataset.url_upload("http://otile1.mqcdn.com/tiles/1.0.0/osm/{Z}/{X}/{Y}.png", {:type=>"tile", :title=>"OpenStreetMap", :citation_url => "http://openstreetmap.org"})
       end
       teardown do
@@ -212,14 +216,30 @@ class TestGeoiq < Test::Unit::TestCase
 
     end
 
+    context "Simple Analysis" do
 
+     setup do
+        @geoiq = Geoiq.client(GEOIQ_URL, USERNAME, PASSWORD)
+        @dataset = @geoiq.analysis.create({:calculation => "buffer", :ds1 => 2288, :distance => 50, :units => 'km'})
+     end
+
+      teardown do
+        @dataset.delete
+      end
+
+      should "be able to do a buffer analysis" do
+        assert_equal  "Dataset Analysis", @dataset.data_type
+        assert_match  /buffer of 50m/ , @dataset.description
+      end
+
+    end
 
   end
 
   context "Maps" do
 
     setup do
-      @geoiq = Geoiq.client("http://localhost.local", "admin", "password")
+      @geoiq = Geoiq.client(GEOIQ_URL, USERNAME, PASSWORD)
       map = @geoiq.map(:title => "my empty map")
       @geoiq_map = map.create
     end

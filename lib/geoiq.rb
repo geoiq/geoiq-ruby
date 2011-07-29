@@ -12,6 +12,7 @@ require dir+"geoiq/errors"
 require dir+"geoiq/search"
 require dir+"geoiq/map"
 require dir+"geoiq/dataset"
+require dir+"geoiq/analysis"
 
 
 class Geoiq
@@ -37,6 +38,10 @@ class Geoiq
     Geoiq::Map.new(auth, options)
   end
 
+  def analysis(options={})
+    Geoiq::Analysis.new(auth, options)
+  end
+  
 
   class << self
     def client(url, username, password, options = {})

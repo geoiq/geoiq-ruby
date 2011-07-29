@@ -3,17 +3,20 @@ require File.dirname(__FILE__) + '/../lib/geoiq.rb'
 
 #
 #
-# Little scratch file for trying out the library
+# Little scratch file with examples for trying out the library
 #
 #
 
 geoiq = Geoiq.client("http://localhost.local", "admin", "password")
-dataset = geoiq.dataset.find(1348)
+dataset = geoiq.dataset.find(2288)
+#2284
+
+analysis = geoiq.analysis.create({:calculation => "intersect", :ds1 => 2288, :ds2 => 2284 })
+p analysis 
 #p dataset.json
 #p dataset.geoiq_id
 #features = dataset.features
-features = dataset.features({:hex_geometry => 0})
-p features
+#
 #
 #p features.size
 #p dataset
