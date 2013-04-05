@@ -18,7 +18,7 @@ Note: That some simple requests will work without a valid username and password.
 
 == Some examples
 
-
+```ruby
   @geoiq = Geoiq.client("http://geocommons.com", "user", "password")
   
   # get dataset and features
@@ -71,7 +71,7 @@ Note: That some simple requests will work without a valid username and password.
   @geoiq.analysis.create({:calculation => "intersect", :ds1 => 2288, :ds2 => 2284 })
 
   @geoiq.analysis.create({:calculation => "buffer", :ds1 => 2288, :distance => 50, :units => 'km'})
-
+```
 
 See the tests, and the API doc for some more, and remember to change the URL to point to your GeoIQ instance, usually Geocommons.com :)
 
